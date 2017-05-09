@@ -1,0 +1,109 @@
+/* ======== Basic ========== */
+html, body {
+  height:100%; 
+  margin:0;padding:0;
+    overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* ========== Backgroung img =============*/
+div.bg-image {
+    background: url(../img/stackedWood_BW_edited.jpg) no-repeat center center fixed #bababa;
+    /*background: url(../images/nepal_cover_photo.jpeg) no-repeat center center fixed #bababa;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    /*border: 5px solid brown;*/
+    z-index: -5;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+div.bg-image:before {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+      top: 0px;
+    left: 0px;
+  z-index: -3;
+  /*background: linear-gradient(to bottom right,#002f4b,#dc4225);
+  opacity: .6;*/
+  background: linear-gradient(to bottom right,rgba(0,47,75,0.6), rgba(220,66,37, 0.6));
+    /*background: linear-gradient(to bottom right,rgba(0,47,75,0.3), rgba(0,47,75,0.8));*/
+  /*background: -webkit-radial-gradient(top center, ellipse cover, rgba(255,255,255,0.2) 0%,rgba(0,0,0,0.5) 100%);*/
+}
+
+/* font - styles */
+/*font-family: 'Abril Fatface', cursive;
+font-family: 'Ubuntu Condensed', sans-serif;*/
+h1 {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 48px;
+  color: white;
+}
+h4 {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 36px;
+  color: white;
+}
+p {
+  color: white;
+}
+
+
+/* ======= center align =========== */
+.container-fluid{
+  height:100%;
+  display:table;
+  width: 100%;
+  padding: 0;
+}
+ 
+.row-fluid {
+  height: 100%; 
+  display:table-cell; 
+  vertical-align: middle;
+}
+ 
+.centering {
+  float:none;
+  margin:0 auto;
+  /*border: 1px solid brown;*/
+}
+
+/* ======= profile img =========== */
+.profile-wrapper {
+  background-color: rgba(5, 5, 5, 0.6);
+  /*border: 3px solid red;*/
+  padding: 3em 0;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.profile-img {
+  max-width: 25%;
+  /*width: 30vh;*/
+  /*height: 30vh;*/
+  background-color: rgba(245, 245, 245, 0.4);
+  border-radius: 100%;
+  /*border: 2px  double whitesmoke;*/
+  border: 2px  solid azure;
+  /*padding: 1%;*/
+}
+
+div.hr {
+  width: 75%;
+  border: 1px solid azure;
+  margin: 2em auto;
+}
+
+@media (max-width: 600px) {
+  .profile-img {
+    max-width: 35%;
+  }
+}
